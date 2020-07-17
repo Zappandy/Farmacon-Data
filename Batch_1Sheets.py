@@ -36,7 +36,7 @@ def Wuxi_sheet(df):
 def MeridianCTSpeakers_Sheet(df):
     """
     pandas dataframe --> pandas dataframe
-    Wuxi_sheet(df) --> dataframe has now naming data, email et al.
+    MeridianCTSpeakers_Sheet(df) --> dataframe has now naming data, email et al.
     :param df: Master Farmacon dataframe
     :return: Updated data frame
     """
