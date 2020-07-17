@@ -27,8 +27,7 @@ def Wuxi_sheet(df):
     list(sheet.keys())  # ['First Name', 'Last Name', 'Title', 'Company']
     for head in sheet.head(0):
         if head in df_copy.head(0): #and df_copy[head].empty:
-            pd.merge(df_copy, sheet, on=head)
-            #df_copy[head] = sheet[head]
+            df_copy[head] = sheet[head]
         else:
             df_copy["Company Name"] = sheet[head]
     return df_copy
